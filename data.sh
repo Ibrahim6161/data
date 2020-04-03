@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 cat >/etc/yum.repos.d/mongodb-org-4.2.repo <<EOL
 [mongodb-org-4.2]
 name=MongoDB Repository
