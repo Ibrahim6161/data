@@ -1,7 +1,7 @@
 #!/bin/bash
-yum install -y yum-utils device-mapper-persistent-data lvm2
-yum-config-manager -y --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-yum install -y docker-ce docker-ce-cli containerd.io
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+sudo yum-config-manager -y --add-repo "https://download.docker.com/linux/centos/docker-ce.repo"
+sudo yum install -y docker-ce docker-ce-cli containerd.io
 cat >/etc/yum.repos.d/mongodb-org-4.2.repo <<EOL
 [mongodb-org-4.2]
 name=MongoDB Repository
@@ -10,6 +10,6 @@ gpgcheck=1
 enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc
 EOL
-yum install -y mongodb-org
-systemctl start mongod
-systemctl start docker
+sudo yum install -y mongodb-org
+sudo systemctl start mongod
+sudo systemctl start docker
