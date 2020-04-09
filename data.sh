@@ -20,4 +20,4 @@ sudo systemctl start mongod
 sudo systemctl enable docker
 sudo systemctl start docker
 
-docker swarm join --token SWMTKN-1-6a84bor5v2zwflcho4yimrxubdjjnz896h1in3o61rtctblqmo-8gf261k15mgrg54bu3hit8asp 10.0.2.6:2377
+ docker swarm join --token SWMTKN-1-551xf9i0tk87pt048f3zsxb014qb73s22b4fukzko82oaqtnqs-4nvgk810caryqk9cxegfuoeei 10.0.2.6:2377
